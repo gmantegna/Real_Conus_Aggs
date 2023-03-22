@@ -46,61 +46,61 @@ demand_weight_factor: 1 # Demand profiles are scaled from 0-1, then scaled up us
 
 # The list of all model regions
 model_regions:
-        - PJMC
-        - PJME
-        - MISE
-        - ISNE
-        - MISC
-        - CANO
-        - TREW
-        - SPPC
-        - FRCC
-        - TRE
-        - SRCA
-        - NYUP
-        - PJMW
-        - NYCW
-        - BASN
-        - SRCE
-        - SPPS
-        - RMRG
-        - MISS
-        - PJMD
-        - SRSE
-        - CASO
-        - NWPP
-        - SRSG
-        - SPPN
-        - MISW
+	- PJMC
+	- PJME
+	- MISE
+	- ISNE
+	- MISC
+	- CANO
+	- TREW
+	- SPPC
+	- FRCC
+	- TRE
+	- SRCA
+	- NYUP
+	- PJMW
+	- NYCW
+	- BASN
+	- SRCE
+	- SPPS
+	- RMRG
+	- MISS
+	- PJMD
+	- SRSE
+	- CASO
+	- NWPP
+	- SRSG
+	- SPPN
+	- MISW
 
 # The list of all aggregations
 region_aggregations:
-        PJMC: [PJM_COMD]
-        PJME: [PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
-        MISE: [MIS_LMI]
-        ISNE: [NENG_CT, NENG_ME, NENGREST]
-        MISC: [MIS_IL, MIS_INKY, MIS_MO, S_D_AECI]
-        CANO: [WEC_BANC, WEC_CALN]
-        TREW: [ERC_PHDL, ERC_WEST]
-        SPPC: [SPP_N]
-        FRCC: [FRCC]
-        TRE: [ERC_REST]
-        SRCA: [S_VACA]
-        NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I]
-        PJMW: [PJM_AP, PJM_ATSI, PJM_West]
-        NYCW: [NY_Z_J, NY_Z_K]
-        BASN: [WECC_ID, WECC_NNV, WECC_SNV, WECC_UT]
-        SRCE: [S_C_KY, S_C_TVA]
-        SPPS: [SPP_SPS, SPP_WEST]
-        RMRG: [WECC_CO, WECC_WY]
-        MISS: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA]
-        PJMD: [PJM_Dom]
-        SRSE: [S_SOU]
-        CASO: [WEC_LADW, WEC_SDGE, WECC_SCE]
-        NWPP: [WECC_MT, WECC_PNW]
-        SRSG: [WECC_AZ, WECC_IID, WECC_NM]
-        SPPN: [SPP_NEBR, SPP_WAUE]
-        MISW: [MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS]
+	PJMC: [PJM_COMD]
+	PJME: [PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
+	MISE: [MIS_LMI]
+	ISNE: [NENG_CT, NENG_ME, NENGREST]
+	MISC: [MIS_IL, MIS_INKY, MIS_MO, S_D_AECI]
+	CANO: [WEC_BANC, WEC_CALN]
+	TREW: [ERC_PHDL, ERC_WEST]
+	SPPC: [SPP_N]
+	FRCC: [FRCC]
+	TRE: [ERC_REST]
+	SRCA: [S_VACA]
+	NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I]
+	PJMW: [PJM_AP, PJM_ATSI, PJM_West]
+	NYCW: [NY_Z_J, NY_Z_K]
+	BASN: [WECC_ID, WECC_NNV, WECC_SNV, WECC_UT]
+	SRCE: [S_C_KY, S_C_TVA]
+	SPPS: [SPP_SPS, SPP_WEST]
+	RMRG: [WECC_CO, WECC_WY]
+	MISS: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA]
+	PJMD: [PJM_Dom]
+	SRSE: [S_SOU]
+	CASO: [WEC_LADW, WEC_SDGE, WECC_SCE]
+	NWPP: [WECC_MT, WECC_PNW]
+	SRSG: [WECC_AZ, WECC_IID, WECC_NM]
+	SPPN: [SPP_NEBR, SPP_WAUE]
+	MISW: [MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS]
 
 
 # Dollar year that all outputs will be converted to
