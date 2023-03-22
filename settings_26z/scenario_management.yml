@@ -1,0 +1,446 @@
+# This is a nested dictionary of settings changes for each scenario defined in the
+# "scenario_definitions_fn" file.
+# - The fist set of keys are planning years.
+# - The second set of keys are either "all_cases" or the name of a scenario in the
+# "scenario_definitions_fn" file. If "all_cases" then the settings key: value will be
+# applied to all settings files for that year. An example scenario might be "ccs_capex".
+# - The third set of keys are names of scenario values. For a "ccs_capex" scenario these
+# might be "high", "mid", "low".
+# - The values under this third set of keys are a key: value pair where the key is a
+# parameter from this settings file with a value that should be modified for a specific
+# case.
+settings_management:
+  2045:
+    min_cap:
+      base:
+        MinCapReq:
+          MinCapTag_1:
+            description: NY_offshorewind
+            min_mw: 9000
+          MinCapTag_2:
+            description: PJME_offshorewind
+            min_mw: 12700
+          MinCapTag_3:
+            description: PJMD_offshorewind
+            min_mw: 5200
+          MinCapTag_4:
+            description: ISNE_offshorewind
+            min_mw: 13945
+          MinCapTag_5:
+            description: SRCA_offshorewind
+            min_mw: 8000
+    dgsolar:
+      IRA_MID:
+        distributed_gen_values:
+          2045:
+            BASN: 3352
+            CANO: 10411
+            CASO: 16154
+            FRCC: 12588
+            ISNE: 7574
+            MISC: 5067
+            MISE: 4034
+            MISS: 3744
+            MISW: 6652
+            NWPP: 3372
+            NYCW: 4522
+            NYUP: 3274
+            PJMC: 3657
+            PJMD: 4998
+            PJME: 15620
+            PJMW: 9404
+            RMRG: 3616
+            SPPC: 1703
+            SPPN: 712
+            SPPS: 3602
+            SRCA: 10947
+            SRCE: 2904
+            SRSE: 3445
+            SRSG: 5591
+            TRE: 17006
+            TREW: 0
+    limitedtransmission:
+      yes:
+        tx_expansion_per_period: 0.5
+    renewable_battery_capex_ccs:
+      renewable_mid_noccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [LandbasedWind, Class1, Moderate, 1]
+          - [OffShoreWind, Class3, Moderate, 1]
+          - [OffShoreWind, Class12, Moderate, 1]
+          - [UtilityPV, Class1, Moderate, 1]
+          - [Battery, "*", Moderate, 1]
+      renewable_mid_yesccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [NaturalGas, CCCCSAvgCF, Conservative, 500]
+          - [LandbasedWind, Class1, Moderate, 1]
+          - [OffShoreWind, Class3, Moderate, 1]
+          - [OffShoreWind, Class12, Moderate, 1]
+          - [UtilityPV, Class1, Moderate, 1]
+          - [Battery, "*", Moderate, 1]
+      renewable_low_noccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [LandbasedWind, Class1, Advanced, 1]
+          - [OffShoreWind, Class3, Advanced, 1]
+          - [OffShoreWind, Class12, Advanced, 1]
+          - [UtilityPV, Class1, Advanced, 1]
+          - [Battery, "*", Advanced, 1]  
+      renewable_low_yesccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [NaturalGas, CCCCSAvgCF, Conservative, 500]  
+          - [LandbasedWind, Class1, Advanced, 1]
+          - [OffShoreWind, Class3, Advanced, 1]
+          - [OffShoreWind, Class12, Advanced, 1]
+          - [UtilityPV, Class1, Advanced, 1]
+          - [Battery, "*", Advanced, 1]
+      renewable_high_noccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [LandbasedWind, Class1, Conservative, 1]
+          - [OffShoreWind, Class3, Conservative, 1]
+          - [OffShoreWind, Class12, Conservative, 1]
+          - [UtilityPV, Class1, Conservative, 1]
+          - [Battery, "*", Conservative, 1]
+      renewable_high_yesccs:
+        atb_new_gen:
+          - [NaturalGas, CCAvgCF, Moderate, 500]
+          - [NaturalGas, CTAvgCF, Moderate, 100]
+          - [NaturalGas, CCCCSAvgCF, Conservative, 500]  
+          - [LandbasedWind, Class1, Conservative, 1]
+          - [OffShoreWind, Class3, Conservative, 1]
+          - [OffShoreWind, Class12, Conservative, 1]
+          - [UtilityPV, Class1, Conservative, 1]
+          - [Battery, "*", Conservative, 1]
+    ira:
+      yes:
+        atb_modifiers:
+          Offwind:
+            capex_mw: [mul, 0.7225]
+          Offwind_floating:
+            capex_mw: [mul, 0.7225]
+          upv:
+            Var_OM_Cost_per_MWh: [sub, 8.82]
+          Landwind:
+            Var_OM_Cost_per_MWh: [sub, 9.67]
+          bat:
+            capex_mw: [mul, 0.7225]
+            capex_mwh: [mul, 0.7225]
+      no:
+        atb_modifiers:
+          Offwind:
+            capex_mw: [mul, 0.70]
+          Offwind_floating:
+            capex_mw: [mul, 0.70]
+          upv:
+            capex_mw: [mul, 0.90]    
+    ng_price:
+      reference:
+        aeo_fuel_scenarios:
+          naturalgas: reference
+      low:
+        aeo_fuel_scenarios:
+          naturalgas: high_resource
+      high:
+        aeo_fuel_scenarios:
+          naturalgas: low_resource
+    advtech:
+      no:
+        modified_atb_new_gen: ~
+      yes_nohydrogen_noira:
+        modified_atb_new_gen:
+          NGCCS90:
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: Conservative
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+          RepowerCoal: # NaturalGas_CCCCSAvgCF_RepowerCoal
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF # RepowerCoal
+            new_cost_case: RepowerCoal
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.89] # Full repower cost
+          ConvertNGCC: # NaturalGas_CCCCSAvgCF_RetrofitNGCC
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.60] # Post Combustion Upgrade
+          AdvNuclear:
+            new_technology: AdvNuclear
+            new_tech_detail: ATB
+            new_cost_case: Moderate
+            atb_technology: Nuclear
+            atb_tech_detail: Nuclear
+            atb_cost_case: Moderate
+            size_mw: 500
+          Storage_MetalAir:
+            new_technology: Storage
+            new_tech_detail: MetalAir
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            capex_mw: 1200000
+            capex_mwh: 12000
+            fixed_o_m_mw: 30000
+            fixed_o_m_mwh: 0
+      yes_nohydrogen_yesira:
+        modified_atb_new_gen:
+          NGCCS90:
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: Conservative
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+          RepowerCoal: # NaturalGas_CCCCSAvgCF_RepowerCoal
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF # RepowerCoal
+            new_cost_case: RepowerCoal
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.89] # Full repower cost
+          ConvertNGCC: # NaturalGas_CCCCSAvgCF_RetrofitNGCC
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.60] # Post Combustion Upgrade
+          AdvNuclear: # AdvNuclear_ATB_Moderate
+            new_technology: AdvNuclear
+            new_tech_detail: ATB
+            new_cost_case: Moderate
+            atb_technology: Nuclear
+            atb_tech_detail: Nuclear
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.63] # 1-(.3 + .1)*.925 (Energy Comunity boost the 30% ITC by 10% to 40%)
+          Storage_MetalAir:
+            new_technology: Storage
+            new_tech_detail: MetalAir
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            capex_mw: 756000 # 1200000*(1-(.3 + .1)*.925) 
+            capex_mwh: 7560 # 12000*(1-(.3 + .1)*.925)
+            fixed_o_m_mw: 30000
+            fixed_o_m_mwh: 0
+      yes_yeshydrogen_noira:
+        modified_atb_new_gen:
+          NGCCS90:
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: Conservative
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+          RepowerCoal: # NaturalGas_CCCCSAvgCF_RepowerCoal
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF # RepowerCoal
+            new_cost_case: RepowerCoal
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.89] # Full repower cost
+          ConvertNGCC: # NaturalGas_CCCCSAvgCF_RetrofitNGCC
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.60] # Post Combustion Upgrade
+          AdvNuclear:
+            new_technology: AdvNuclear
+            new_tech_detail: ATB
+            new_cost_case: Moderate
+            atb_technology: Nuclear
+            atb_tech_detail: Nuclear
+            atb_cost_case: Moderate
+            size_mw: 500
+          Storage_MetalAir:
+            new_technology: Storage
+            new_tech_detail: MetalAir
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            capex_mw: 1200000
+            capex_mwh: 12000
+            fixed_o_m_mw: 30000
+            fixed_o_m_mwh: 0
+          HydrogenCC:
+            new_technology: Hydrogen
+            new_tech_detail: CCAvgCF
+            new_cost_case: Moderate
+            atb_technology: NaturalGas
+            atb_tech_detail: CCAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+          HydrogenCT:
+            new_technology: Hydrogen
+            new_tech_detail: CTAvgCF
+            new_cost_case: Moderate
+            atb_technology: NaturalGas
+            atb_tech_detail: CTAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+          ConvertNGCCHydrogen: # Hydrogen_CCAvgCF_RetrofitNGCC
+            new_technology: Hydrogen
+            new_tech_detail: CCAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.49] # Turbine Swap Cost
+          ConvertNGCTHydrogen:
+            new_technology: Hydrogen
+            new_tech_detail: CTAvgCF
+            new_cost_case: RetrofitNGCT
+            atb_technology: NaturalGas
+            atb_tech_detail: CTAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.50] # Turbine Swap Cost
+          Storage_Hydrogen:
+            new_technology: Storage
+            new_tech_detail: Hydrogen
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            variable_o_m_mwh: 4.5
+            capex_mw: 1339000
+            capex_mwh: 1000
+            fixed_o_m_mw: 51395
+            fixed_o_m_mwh: 0
+      yes_yeshydrogen_yesira:
+        modified_atb_new_gen:
+          NGCCS90:
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: Conservative
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+          RepowerCoal: # NaturalGas_CCCCSAvgCF_RepowerCoal
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF # RepowerCoal
+            new_cost_case: RepowerCoal
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.89] # Full repower cost
+          ConvertNGCC: # NaturalGas_CCCCSAvgCF_RetrofitNGCC
+            new_technology: NaturalGas
+            new_tech_detail: CCCCSAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCCCSAvgCF
+            atb_cost_case: Conservative
+            size_mw: 500
+            capex_mw: [mul, 0.60] # Post Combustion Upgrade
+          AdvNuclear: # AdvNuclear_ATB_Moderate
+            new_technology: AdvNuclear
+            new_tech_detail: ATB
+            new_cost_case: Moderate
+            atb_technology: Nuclear
+            atb_tech_detail: Nuclear
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.63] # 1-(.3 + .1)*.925 (Energy Comunity boost the 30% ITC by 10% to 40%)
+          Storage_MetalAir: # Storage_MetalAir_Advanced
+            new_technology: Storage
+            new_tech_detail: MetalAir
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            capex_mw: 756000 # 1200000*(1-(.3 + .1)*.925) 
+            capex_mwh: 7560 # 12000*(1-(.3 + .1)*.925)
+            fixed_o_m_mw: 30000
+            fixed_o_m_mwh: 0
+          HydrogenCC:
+            new_technology: Hydrogen
+            new_tech_detail: CCAvgCF
+            new_cost_case: Moderate
+            atb_technology: NaturalGas
+            atb_tech_detail: CCAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+          HydrogenCT:
+            new_technology: Hydrogen
+            new_tech_detail: CTAvgCF
+            new_cost_case: Moderate
+            atb_technology: NaturalGas
+            atb_tech_detail: CTAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+          ConvertNGCCHydrogen: # Hydrogen_CCAvgCF_RetrofitNGCC
+            new_technology: Hydrogen
+            new_tech_detail: CCAvgCF
+            new_cost_case: RetrofitNGCC
+            atb_technology: NaturalGas
+            atb_tech_detail: CCAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.49] # Turbine Swap Cost
+          ConvertNGCTHydrogen:
+            new_technology: Hydrogen
+            new_tech_detail: CTAvgCF
+            new_cost_case: RetrofitNGCT
+            atb_technology: NaturalGas
+            atb_tech_detail: CTAvgCF
+            atb_cost_case: Moderate
+            size_mw: 500
+            capex_mw: [mul, 0.50] # Turbine Swap Cost
+          Storage_Hydrogen:
+            new_technology: Storage
+            new_tech_detail: Hydrogen
+            new_cost_case: Advanced
+            atb_technology: Battery
+            atb_tech_detail: "*"
+            atb_cost_case: Moderate
+            size_mw: 1
+            variable_o_m_mwh: 4.5
+            capex_mw: 843570 # 1339000 *(1-(.3 + .1)*.925) 
+            capex_mwh: 640 # 1000 *(1-(.3 + .1)*.925) 
+            fixed_o_m_mw: 51395
+            fixed_o_m_mwh: 0
+  
