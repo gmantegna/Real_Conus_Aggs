@@ -174,14 +174,6 @@ generator_columns: [
             "FLEX",
             "HYDRO",
             "LDS",
-            "ESR_1",
-            "ESR_2",
-            "ESR_3",
-            "ESR_4",
-            "ESR_5",
-            "ESR_6",
-            "ESR_7",
-            "ESR_8",
             "MinCapTag_1",
             "MinCapTag_2",
             "MinCapTag_3",
@@ -1731,22 +1723,6 @@ model_tag_names:
   # - Hydro_Energy_to_Power_Ratio
   - Flexible_Demand_Energy_Eff
   - CapRes_1
-  - ESR_1 # WECC RPS
-  - ESR_2 # ISONE RPS
-  - ESR_3 # MISO RPS
-  - ESR_4 # NYISO RPS
-  - ESR_5 # PJM RPS
-  - ESR_6 # SPP RPS
-  - ESR_7 # SERC RPS
-  - ESR_8 # ERCOT RPS
-  - ESR_9 # WECC CES
-  - ESR_10 # ISONE CES
-  - ESR_11 # MISO CES
-  - ESR_12 # NYISO CES
-  - ESR_13 # PJM CES
-  - ESR_14 # SPP CES
-  - ESR_15 # SERC CES
-  - ESR_16 # ERCOT CES
   - MinCapTag_1 # NY Offshore wind, NYUP, NYCW
   - MinCapTag_2 # MD & NJ offshore wind, PJME
   - MinCapTag_3 # VA offshore wind, PJMD
