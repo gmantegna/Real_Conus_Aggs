@@ -371,150 +371,6 @@ electrification_scenario: IRA_MID
 # Name of the flexible resource, fraction of load that can be shifted, and model-specific
 # parameters that will be applied to each resource.
 flexible_demand_resources:
-  2025:
-    trans_light_duty:
-      fraction_shiftable: 0.61 # 90% in 2050, 50% in 2015, 1.14% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 5
-        Max_Flexible_Demand_Advance: 0
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_water_heat:
-      fraction_shiftable: 0.07 # 25% in 2050, 0% in 2015, 0.71% per year 
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_water_heat:
-      fraction_shiftable: 0.07 # 25% in 2050, 0% in 2015, 0.71% per year 
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_space_heat_cool:
-      fraction_shiftable: 0.07 # 25% in 2050, 0% in 2015, 0.71% per year 
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_space_heat_cool:
-      fraction_shiftable: 0.10 # 35% in 2050, 0% in 2015, 1.00% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-  2030:
-    trans_light_duty:
-      fraction_shiftable: 0.67 # 90% in 2050, 50% in 2015, 1.14% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 5
-        Max_Flexible_Demand_Advance: 0
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_water_heat:
-      fraction_shiftable: 0.11
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_water_heat:
-      fraction_shiftable: 0.11
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_space_heat_cool:
-      fraction_shiftable: 0.11 # 25% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_space_heat_cool:
-      fraction_shiftable: 0.15 # 35% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-  2035:
-    trans_light_duty:
-      fraction_shiftable: 0.73 # 90% in 2050, 50% in 2015, 1.14% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 5
-        Max_Flexible_Demand_Advance: 0
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_water_heat:
-      fraction_shiftable: 0.14
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_water_heat:
-      fraction_shiftable: 0.14
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_space_heat_cool:
-      fraction_shiftable: 0.14 # 25% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_space_heat_cool:
-      fraction_shiftable: 0.20 # 35% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-  2040:
-    trans_light_duty:
-      fraction_shiftable: 0.79 # 90% in 2050, 50% in 2015, 1.14% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 5
-        Max_Flexible_Demand_Advance: 0
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_water_heat:
-      fraction_shiftable: 0.18
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_water_heat:
-      fraction_shiftable: 0.18
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_space_heat_cool:
-      fraction_shiftable: 0.18 # 25% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_space_heat_cool:
-      fraction_shiftable: 0.25 # 35% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
   2045:
     trans_light_duty:
       fraction_shiftable: 0.84 # 90% in 2050, 50% in 2015, 1.14% per year
@@ -546,42 +402,6 @@ flexible_demand_resources:
         FLEX: 1
     res_space_heat_cool:
       fraction_shiftable: 0.30 # 35% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-  2050:
-    trans_light_duty:
-      fraction_shiftable: 0.90 # 90% in 2050, 50% in 2015, 1.14% per year
-      parameter_values:
-        Max_Flexible_Demand_Delay: 5
-        Max_Flexible_Demand_Advance: 0
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_water_heat:
-      fraction_shiftable: 0.25
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_water_heat:
-      fraction_shiftable: 0.25
-      parameter_values:
-        Max_Flexible_Demand_Delay: 2
-        Max_Flexible_Demand_Advance: 2
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    comm_space_heat_cool:
-      fraction_shiftable: 0.25 # 25% in 2050, 0% in 2015
-      parameter_values:
-        Max_Flexible_Demand_Delay: 1
-        Max_Flexible_Demand_Advance: 1
-        Flexible_Demand_Energy_Eff: 1
-        FLEX: 1
-    res_space_heat_cool:
-      fraction_shiftable: 0.35 # 35% in 2050, 0% in 2015
       parameter_values:
         Max_Flexible_Demand_Delay: 1
         Max_Flexible_Demand_Advance: 1
@@ -1217,6 +1037,8 @@ regional_hydro_factor:
 # Default value can be numeric or a dictionary of region: numeric values. Technology names
 # here and in the dataframe are both converted to snake case and matches are made if this
 # name is contained in the dataframe technology name.
+
+## TODO: weighted average by load
 energy_storage_duration:
   Hydroelectric Pumped Storage: 15.5
   Batteries:
@@ -1360,7 +1182,6 @@ additional_new_gen: ~
 # dataframe.
 new_gen_not_available: ~
 
-# TODO - what do we do with offshore wind?
 renewables_clusters:
   - region: all
     technology: landbasedwind
@@ -2041,81 +1862,47 @@ model_tag_values:
     NaturalGas_CCCCSAvgCF_RetrofitNGCC: 1
     Hydrogen_CCAvgCF_RetrofitNGCC: 1
     Hydrogen_CTAvgCF_RetrofitNGCT: 1
+  CapRes_1:
+    Conventional Steam Coal: 0.93
+    Natural Gas Fired Combined Cycle: 0.93
+    Natural Gas Fired Combustion Turbine: 0.93
+    Natural Gas Internal Combustion Engine: 0.93
+    Natural Gas Steam Turbine: 0.93
+    Petroleum Liquids: 0.93
+    Nuclear: 0.93
+    Biomass: 0.93
+    NaturalGas_: 0.93 # Candidate
+    AdvNuclear_: 0.93 # Candidate
+    Hydrogen_: 0.93 # Candidate
+    Geothermal: 0.93 # give geothermal credit as thermal
+    Onshore Wind Turbine: 0.8
+    Offshore Wind Turbine: 0.8
+    Solar Photovoltaic: 0.8
+    UtilityPV_: 0.8 # Candidate
+    LandbasedWind_: 0.8 # Candidate
+    OffShoreWind_: 0.8 # Candidate
+    CandGeothermal_: 0.93 # give geothermal credit as thermal
+    Conventional Hydroelectric: 0.8
+    Small Hydroelectric: 0.8
+    Distributed_Generation: 0.8
+    Batteries: 0.95 # added on Aug 16 2022 by Qingyu
+    Hydroelectric Pumped Storage: 0.95
+    Battery_: 0.95 # Candidate
+    Storage_: 0.95 # Candidate
+    trans_light_duty: 0.95
+    comm_water_heat: 0.95
+    comm_space_heat_cool: 0.95
+    res_water_heat: 0.95
+    res_space_heat_cool: 0.95
 
 # Tags for a technology in a specific region
 # Format should be regional_tag_values: <region>: <tag name>: <technology>: <tag value>
 # Technologies will be matched using str.contains(), so partial names can be included
 # but they might unintentially map to other techs
+
+## TODO: ask about naming of Retro1_Source and Retro2_Source
 regional_tag_values:
-  BASN: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1:
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: #WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: #WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  BASN:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: BASN_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: BASN_natural_gas_fired_combined_cycle_1
@@ -2124,75 +1911,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: BASN_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: BASN_naturalgas_ctavgcf_moderate_0
-  CANO: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1:
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: #WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: #WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  CANO:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: CANO_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: CANO_natural_gas_fired_combined_cycle_1
@@ -2201,75 +1920,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: CANO_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: CANO_naturalgas_ctavgcf_moderate_0
-  CASO: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1:
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: #WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: #WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  CASO:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: CASO_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: CASO_natural_gas_fired_combined_cycle_1
@@ -2278,75 +1929,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: CASO_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: CASO_naturalgas_ctavgcf_moderate_0
-  FRCC: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1:
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_7: # SERC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_15: # SERC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  FRCC:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: FRCC_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: FRCC_natural_gas_fired_combined_cycle_1
@@ -2359,74 +1942,6 @@ regional_tag_values:
     MinCapTag_4:
       OffShoreWind: 1
       Offshore Wind Turbine: 1
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1: #ISONE Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_2: # ISONE RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_10: # ISONE CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: ISNE_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: ISNE_natural_gas_fired_combined_cycle_1
@@ -2435,75 +1950,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: ISNE_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: ISNE_naturalgas_ctavgcf_moderate_0
-  MISC: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1: #MISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_3: # MISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_11: # MISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  MISC:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: MISC_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISC_natural_gas_fired_combined_cycle_1
@@ -2512,75 +1959,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: MISC_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: MISC_naturalgas_ctavgcf_moderate_0
-  MISE: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1: #MISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_3: # MISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_11: # MISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  MISE:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: MISE_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISE_natural_gas_fired_combined_cycle_1
@@ -2589,75 +1968,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: MISE_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: MISE_naturalgas_ctavgcf_moderate_0
-  MISS: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1: #MISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_3: # MISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_11: # MISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  MISS:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: MISS_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISS_natural_gas_fired_combined_cycle_1
@@ -2666,75 +1977,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: MISS_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: MISS_naturalgas_ctavgcf_moderate_0
-  MISW: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 2 # Place holder
-    CapRes_1: #MISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_3: # MISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_11: # MISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  MISW:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: MISW_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISW_natural_gas_fired_combined_cycle_1
@@ -2743,75 +1986,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: MISW_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: MISW_naturalgas_ctavgcf_moderate_0
-  NWPP: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # WECC-NWPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: # WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: # WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  NWPP:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: NWPP_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: NWPP_natural_gas_fired_combined_cycle_1
@@ -2820,78 +1995,10 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: NWPP_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: NWPP_naturalgas_ctavgcf_moderate_0
-  NYCW: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
+  NYCW:
     MinCapTag_1:
       Offshore Wind Turbine: 1 # Existing
       OffShoreWind_: 1 # Candidate
-    CapRes_1: # NYISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_4: # NYISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_12: # NYISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: NYCW_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: NYCW_natural_gas_fired_combined_cycle_1
@@ -2900,75 +2007,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: NYCW_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: NYCW_naturalgas_ctavgcf_moderate_0
-  NYUP: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # NYISO Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_4: # NYISO RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_12: # NYISO CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  NYUP:
     MinCapTag_1:
       Offshore Wind Turbine: 1 # Existing
       OffShoreWind_: 1 # Candidate
@@ -2980,75 +2019,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: NYUP_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: NYUP_naturalgas_ctavgcf_moderate_0
-  PJMC: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # PJM Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_5: # PJM RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_13: # PJM CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  PJMC:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: PJMC_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMC_natural_gas_fired_combined_cycle_1
@@ -3057,78 +2028,10 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: PJMC_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: PJMC_naturalgas_ctavgcf_moderate_0
-  PJMD: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
+  PJMD:
     MinCapTag_3:
       OffShoreWind: 1
       Offshore Wind Turbine: 1
-    CapRes_1: # PJM Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_5: # PJM RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_13: # PJM CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: PJMD_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMD_natural_gas_fired_combined_cycle_1
@@ -3137,78 +2040,10 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: PJMD_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: PJMD_naturalgas_ctavgcf_moderate_0
-  PJME: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
+  PJME:
     MinCapTag_2:
       Offshore Wind Turbine: 1 # Existing
       OffShoreWind_: 1 # Candidate
-    CapRes_1: # PJM Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_5: # PJM RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_13: # PJM CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: PJME_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJME_natural_gas_fired_combined_cycle_1
@@ -3217,75 +2052,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: PJME_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: PJME_naturalgas_ctavgcf_moderate_0
-  PJMW: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # PJM Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_5: # PJM RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_13: # PJM CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  PJMW:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: PJMW_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMW_natural_gas_fired_combined_cycle_1
@@ -3294,75 +2061,7 @@ regional_tag_values:
     Retro2_Source:
       Hydrogen_CCAvgCF_RetrofitNGCC: PJMW_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: PJMW_naturalgas_ctavgcf_moderate_0
-  RMRG: 
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # WECC-NWPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: # WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: # WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
+  RMRG:
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: RMRG_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: RMRG_natural_gas_fired_combined_cycle_1
@@ -3372,74 +2071,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: RMRG_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: RMRG_naturalgas_ctavgcf_moderate_0
   SPPC:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # SPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_6: # SPP RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_14: # SPP CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SPPC_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPPC_natural_gas_fired_combined_cycle_1
@@ -3449,74 +2080,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SPPC_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SPPC_naturalgas_ctavgcf_moderate_0
   SPPN:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # SPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_6: # SPP RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_14: # SPP CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SPPN_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPPN_natural_gas_fired_combined_cycle_1
@@ -3526,74 +2089,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SPPN_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SPPN_naturalgas_ctavgcf_moderate_0
   SPPS:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # SPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_6: # SPP RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_14: # SPP CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SPPS_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPPS_natural_gas_fired_combined_cycle_1
@@ -3603,77 +2098,9 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SPPS_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SPPS_naturalgas_ctavgcf_moderate_0
   SRCA:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
     MinCapTag_5:
       OffShoreWind: 1
       Offshore Wind Turbine: 1
-    CapRes_1: # SERC Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_7: # SERC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_15: # SERC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SRCA_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCA_natural_gas_fired_combined_cycle_1
@@ -3683,74 +2110,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SRCA_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SRCA_naturalgas_ctavgcf_moderate_0
   SRCE:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # SERC Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_7: # SERC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_15: # SERC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SRCE_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCE_natural_gas_fired_combined_cycle_1
@@ -3760,74 +2119,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SRCE_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SRCE_naturalgas_ctavgcf_moderate_0
   SRSE:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # SERC Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_7: # SERC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_15: # SERC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SRSE_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRSE_natural_gas_fired_combined_cycle_1
@@ -3837,74 +2128,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SRSE_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SRSE_naturalgas_ctavgcf_moderate_0
   SRSG:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # WECC-NWPP Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_1: # WECC RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_9: # WECC CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: SRSG_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRSG_natural_gas_fired_combined_cycle_1
@@ -3914,74 +2137,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: SRSG_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: SRSG_naturalgas_ctavgcf_moderate_0
   TRE:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # ERCOT Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_8: # ERCOT RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_16: # ERCOT CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
@@ -3991,74 +2146,6 @@ regional_tag_values:
       Hydrogen_CCAvgCF_RetrofitNGCC: TRE_naturalgas_ccavgcf_moderate_0
       Hydrogen_CTAvgCF_RetrofitNGCT: TRE_naturalgas_ctavgcf_moderate_0
   TREW:
-    # Hydro_Energy_to_Power_Ratio:
-    #   Conventional Hydroelectric: 4 # Place holder
-    CapRes_1: # ERCOT Capres
-      Conventional Steam Coal: 0.93
-      Natural Gas Fired Combined Cycle: 0.93
-      Natural Gas Fired Combustion Turbine: 0.93
-      Natural Gas Internal Combustion Engine: 0.93
-      Natural Gas Steam Turbine: 0.93
-      Petroleum Liquids: 0.93
-      Nuclear: 0.93
-      Biomass: 0.93
-      NaturalGas_: 0.93 # Candidate
-      AdvNuclear_: 0.93 # Candidate
-      Hydrogen_: 0.93 # Candidate
-      Geothermal: 0.93 # give geothermal credit as thermal
-      Onshore Wind Turbine: 0.8
-      Offshore Wind Turbine: 0.8
-      Solar Photovoltaic: 0.8
-      UtilityPV_: 0.8 # Candidate
-      LandbasedWind_: 0.8 # Candidate
-      OffShoreWind_: 0.8 # Candidate
-      CandGeothermal_: 0.93 # give geothermal credit as thermal
-      Conventional Hydroelectric: 0.8
-      Small Hydroelectric: 0.8
-      Distributed_Generation: 0.8
-      Batteries: 0.95 # added on Aug 16 2022 by Qingyu
-      Hydroelectric Pumped Storage: 0.95
-      Battery_: 0.95 # Candidate
-      Storage_: 0.95 # Candidate
-      trans_light_duty: 0.95
-      comm_water_heat: 0.95
-      comm_space_heat_cool: 0.95
-      res_water_heat: 0.95
-      res_space_heat_cool: 0.95
-    ESR_8: # ERCOT RPS
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 0
-      Nuclear: 0
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 0
-      NaturalGas_CCCCS: 0
-      Hydrogen_: 0
-    ESR_16: # ERCOT CES
-      Small Hydroelectric: 1
-      Onshore Wind Turbine: 1
-      Offshore Wind Turbine: 1
-      Solar Photovoltaic: 1
-      Geothermal: 1
-      Conventional Hydroelectric: 1
-      Nuclear: 1
-      Biomass: 1
-      Distributed_Generation: 1
-      UtilityPV_: 1
-      LandbasedWind_: 1
-      OffShoreWind_: 1
-      CandGeothermal_: 1
-      AdvNuclear_: 1
-      NaturalGas_CCCCS: 1
-      Hydrogen_: 1
     Retro1_Source:
       NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_WEST_conventional_steam_coal_1
       NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_WEST_natural_gas_fired_combined_cycle_1
