@@ -1179,41 +1179,34 @@ renewables_clusters:
     technology: landbasedwind
     max_clusters: 10
     max_lcoe: 100
-    min_capacity: 10000 
   - region: all
     technology: utilitypv
     max_clusters: 10
     max_lcoe: 100
-    min_capacity: 75000
   - region: all
     technology: offshorewind
     turbine_type: fixed
     pref_site: 1
     max_lcoe: 150
     max_clusters: 5
-    min_capacity: 12000
   - region: all
     technology: offshorewind
     turbine_type: fixed
     pref_site: 0
     max_lcoe: 150
     max_clusters: 5
-    min_capacity: 5100
   - region: all
     technology: offshorewind
     turbine_type: floating
     pref_site: 1
     max_lcoe: 150
     max_clusters: 5
-    min_capacity: 10000
   - region: all
     technology: offshorewind
     turbine_type: floating
     pref_site: 0
     max_lcoe: 150
     max_clusters: 5
-    min_capacity: 10000
-
 
 
 # Map user-regions to AEO Electricity Market Module (EMM) regions for cost multipliers
