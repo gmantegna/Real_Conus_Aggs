@@ -917,40 +917,7 @@ tech_groups:
 regional_no_grouping: ~
 
 # Add code to ensure region names here are included above
-# TODO: Deleted this
 alt_num_clusters: ~
-#  MISS:
-#    Natural Gas Fired Combined Cycle: 3
-#    Natural Gas Steam Turbine: 2
-#  MISW:
-#    Natural Gas Fired Combustion Turbine: 3
-#  NYCW:
-#    Natural Gas Fired Combined Cycle: 3
-#    Natural Gas Fired Combustion Turbine: 3
-#  PJMD:
-#    Natural Gas Fired Combustion Turbine: 3
-#  PJME:
-#    Natural Gas Fired Combustion Turbine: 3
-#  PJMW:
-#    Conventional Steam Coal: 3
-#    Natural Gas Fired Combustion Turbine: 3
-#  SPPC:
-#    Natural Gas Fired Combustion Turbine: 3
-#  SPPS:
-#    Natural Gas Fired Combustion Turbine: 3
-#  SRCE:
-#    Natural Gas Fired Combustion Turbine: 3
-#  SRSE:
-#    Natural Gas Fired Combined Cycle: 3
-#  TRE:
-#    Natural Gas Fired Combined Cycle: 4
-#    Natural Gas Fired Combustion Turbine: 3
-#  TREW:
-#    Natural Gas Fired Combined Cycle: 1
-#    Natural Gas Fired Combustion Turbine: 1
-  
-  
-
 
 # CAPACITY FACTOR
 # Calculate the capacity factor of technology types listed here. If derate_capacity is
@@ -1869,7 +1836,6 @@ model_tag_values:
 # Technologies will be matched using str.contains(), so partial names can be included
 # but they might unintentially map to other techs
 
-## TODO: ask about naming of Retro1_Source and Retro2_Source
 regional_tag_values:
   BASN:
     Retro1_Source:
@@ -2242,24 +2208,6 @@ transmission_investment_cost:
     wacc: 0.044
     investment_years: 60
 
-# tx_costs_2013 = {
-#     "wecc": 1350,
-#     "ca": 1350 * 2.25,  # According to Reeds docs, CA is 2.25x the rest of WECC
-#     "tx": 1350,
-#     "upper_midwest": 900,
-#     "lower_midwest": 900,
-#     "miso_s": 1750,
-#     "great_lakes": 1050,
-#     "pjm_s": 1350,
-#     "pj_pa": 1750,
-#     "pjm_md_nj": 4250,  # Bins are $1500 wide - assume max bin is $750 above max
-#     "ny": 2750,
-#     "tva": 1050,
-#     "south": 1350,
-#     "fl": 1350,
-#     "vaca": 900,
-#     "ne": 4250,  # Bins are $1500 wide - assume max bin is $750 above max
-# }
   tx:
     capex_mw_mile: # Now the following are place holders
       BASN: 1500 # wecc
