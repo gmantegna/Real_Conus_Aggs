@@ -1,4 +1,4 @@
-RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups"
+RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups_26z"
 
 ## extra_inputs.yml
 
@@ -25,7 +25,7 @@ capacity_limit_spur_fn: conus_resource_capacity_spur.csv
 demand_segments_fn: conus_demand_segments_voll.csv
 misc_gen_inputs_fn: conus_misc_gen_inputs.csv
 genx_settings_folder: genx_settings
-user_transmission_costs: network_costs_conus_26.csv
+user_transmission_costs: network_costs_conus_26_zone.csv
 user_transmission_constraints_fn: ipm_tx_corrections.csv
 
 ## time_clustering.yml

@@ -1,4 +1,4 @@
-RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups"
+RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups_22z"
 
 ## extra_inputs.yml
 
@@ -25,7 +25,7 @@ capacity_limit_spur_fn: conus_resource_capacity_spur.csv
 demand_segments_fn: conus_demand_segments_voll.csv
 misc_gen_inputs_fn: conus_misc_gen_inputs.csv
 genx_settings_folder: genx_settings
-user_transmission_costs: network_costs_conus_22.csv
+user_transmission_costs: network_costs_conus_22_zone.csv
 user_transmission_constraints_fn: ipm_tx_corrections.csv
 
 ## time_clustering.yml
@@ -46,53 +46,53 @@ demand_weight_factor: 1 # Demand profiles are scaled from 0-1, then scaled up us
 
 # The list of all model regions
 model_regions:
-	- SOU
-	- PJMD
-	- CASO
-	- MISE
-	- ISNE
-	- CANO
-	- MISW
-	- NWPP
-	- SPP
-	- MISC
-	- MISS
-	- SRCE
-	- NYUP
-	- NYCW
-	- PJMW
-	- BASN
-	- PJME
-	- TRE
-	- RMRG
-	- SRSG
-	- SRCA
-	- PJMC
+        - SOU
+        - PJMD
+        - CASO
+        - MISE
+        - ISNE
+        - CANO
+        - MISW
+        - NWPP
+        - SPP
+        - MISC
+        - MISS
+        - SRCE
+        - NYUP
+        - NYCW
+        - PJMW
+        - BASN
+        - PJME
+        - TRE
+        - RMRG
+        - SRSG
+        - SRCA
+        - PJMC
 
 # The list of all aggregations
 region_aggregations:
-	SOU: [FRCC, S_SOU]
-	PJMD: [PJM_Dom]
-	CASO: [WEC_LADW, WEC_SDGE, WECC_SCE]
-	MISE: [MIS_LMI]
-	ISNE: [NENG_CT, NENG_ME, NENGREST]
-	CANO: [WEC_BANC, WEC_CALN]
-	MISW: [MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS]
-	NWPP: [WECC_MT, WECC_PNW]
-	SPP: [SPP_N, SPP_NEBR, SPP_WAUE, SPP_SPS, SPP_WEST]
-	MISC: [MIS_IL, MIS_INKY, MIS_MO, S_D_AECI]
-	MISS: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA]
-	SRCE: [S_C_KY, S_C_TVA]
-	NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I]
-	NYCW: [NY_Z_J, NY_Z_K]
-	PJMW: [PJM_AP, PJM_ATSI, PJM_West]
-	BASN: [WECC_ID, WECC_NNV, WECC_SNV, WECC_UT]
-	PJME: [PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
-	TRE: [ERC_PHDL, ERC_WEST, ERC_REST]
-	RMRG: [WECC_CO, WECC_WY]
-	SRSG: [WECC_AZ, WECC_IID, WECC_NM]
-	SRCA: [S_VACA]
-	PJMC: [PJM_COMD]
+        SOU: [FRCC, S_SOU]
+        PJMD: [PJM_Dom]
+        CASO: [WEC_LADW, WEC_SDGE, WECC_SCE]
+        MISE: [MIS_LMI]
+        ISNE: [NENG_CT, NENG_ME, NENGREST]
+        CANO: [WEC_BANC, WEC_CALN]
+        MISW: [MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS]
+        NWPP: [WECC_MT, WECC_PNW]
+        SPP: [SPP_N, SPP_NEBR, SPP_WAUE, SPP_SPS, SPP_WEST]
+        MISC: [MIS_IL, MIS_INKY, MIS_MO, S_D_AECI]
+        MISS: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA]
+        SRCE: [S_C_KY, S_C_TVA]
+        NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I]
+        NYCW: [NY_Z_J, NY_Z_K]
+        PJMW: [PJM_AP, PJM_ATSI, PJM_West]
+        BASN: [WECC_ID, WECC_NNV, WECC_SNV, WECC_UT]
+        PJME: [PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
+        TRE: [ERC_PHDL, ERC_WEST, ERC_REST]
+        RMRG: [WECC_CO, WECC_WY]
+        SRSG: [WECC_AZ, WECC_IID, WECC_NM]
+        SRCA: [S_VACA]
+        PJMC: [PJM_COMD]
 
 
 # Dollar year that all outputs will be converted to
@@ -116,29 +116,29 @@ utc_offset: -5
 ## Page 40, use 2022 number
 ## https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_SRA_2022.pdf
 regional_capacity_reserves:
-	CapRes_1:
-		NYCW: 0.1500
-		SRCA: 0.1500
-		ISNE: 0.1430
-		PJMW: 0.1490
-		CANO: 0.1690
-		NYUP: 0.1500
-		MISE: 0.1790
-		SRCE: 0.1500
-		TRE: 0.1375
-		MISW: 0.1790
-		SPP: 0.1600
-		PJMC: 0.1490
-		PJME: 0.1490
-		RMRG: 0.1610
-		MISS: 0.1790
-		CASO: 0.1690
-		BASN: 0.1610
-		PJMD: 0.1490
-		NWPP: 0.1610
-		SRSG: 0.1020
-		SOU: 0.1500
-		MISC: 0.1790
+        CapRes_1:
+                NYCW: 0.1500
+                SRCA: 0.1500
+                ISNE: 0.1430
+                PJMW: 0.1490
+                CANO: 0.1690
+                NYUP: 0.1500
+                MISE: 0.1790
+                SRCE: 0.1500
+                TRE: 0.1375
+                MISW: 0.1790
+                SPP: 0.1600
+                PJMC: 0.1490
+                PJME: 0.1490
+                RMRG: 0.1610
+                MISS: 0.1790
+                CASO: 0.1690
+                BASN: 0.1610
+                PJMD: 0.1490
+                NWPP: 0.1610
+                SRSG: 0.1020
+                SOU: 0.1500
+                MISC: 0.1790
 cap_res_network_derate_default: 0.95
 
 
@@ -272,28 +272,28 @@ generator_columns: [
 # - "capacity": Use the capacity (MW) to scale up generation
 # - "fraction_load": Distributed generation is a specific fraction of total load
 distributed_gen_method:
-	SOU: capacity
-	PJMD: capacity
-	CASO: capacity
-	MISE: capacity
-	ISNE: capacity
-	CANO: capacity
-	MISW: capacity
-	NWPP: capacity
-	SPP: capacity
-	MISC: capacity
-	MISS: capacity
-	SRCE: capacity
-	NYUP: capacity
-	NYCW: capacity
-	PJMW: capacity
-	BASN: capacity
-	PJME: capacity
-	TRE: capacity
-	RMRG: capacity
-	SRSG: capacity
-	SRCA: capacity
-	PJMC: capacity
+        SOU: capacity
+        PJMD: capacity
+        CASO: capacity
+        MISE: capacity
+        ISNE: capacity
+        CANO: capacity
+        MISW: capacity
+        NWPP: capacity
+        SPP: capacity
+        MISC: capacity
+        MISS: capacity
+        SRCE: capacity
+        NYUP: capacity
+        NYCW: capacity
+        PJMW: capacity
+        BASN: capacity
+        PJME: capacity
+        TRE: capacity
+        RMRG: capacity
+        SRSG: capacity
+        SRCA: capacity
+        PJMC: capacity
 
 # Values - either MW or fraction of load - matching the methods listed for each region
 # in "distributed_gen_method". These can be varied by scenario by adding them to an
@@ -931,28 +931,28 @@ derate_techs:
 small_hydro: True
 small_hydro_mw: 30
 small_hydro_regions:
-	- SOU
-	- PJMD
-	- CASO
-	- MISE
-	- ISNE
-	- CANO
-	- MISW
-	- NWPP
-	- SPP
-	- MISC
-	- MISS
-	- SRCE
-	- NYUP
-	- NYCW
-	- PJMW
-	- BASN
-	- PJME
-	- TRE
-	- RMRG
-	- SRSG
-	- SRCA
-	- PJMC
+        - SOU
+        - PJMD
+        - CASO
+        - MISE
+        - ISNE
+        - CANO
+        - MISW
+        - NWPP
+        - SPP
+        - MISC
+        - MISS
+        - SRCE
+        - NYUP
+        - NYCW
+        - PJMW
+        - BASN
+        - PJME
+        - TRE
+        - RMRG
+        - SRSG
+        - SRCA
+        - PJMC
 
 
 # Factors for calculating hydro energy to power ratio in GenX. The default factors is
@@ -973,30 +973,30 @@ regional_hydro_factor:
 # name is contained in the dataframe technology name.
 
 energy_storage_duration:
-	Hydroelectric Pumped Storage: 15.5
-	Batteries:
-		NYCW: 2.00
-		SRCA: 2.00
-		ISNE: 2.00
-		PJMW: 2.00
-		CANO: 4.00
-		NYUP: 2.00
-		MISE: 2.00
-		SRCE: 2.00
-		TRE: 2.00
-		MISW: 2.00
-		SPP: 2.00
-		PJMC: 2.00
-		PJME: 2.00
-		RMRG: 2.00
-		MISS: 2.00
-		CASO: 4.00
-		BASN: 2.00
-		PJMD: 2.00
-		NWPP: 2.00
-		SRSG: 2.00
-		SOU: 2.00
-		MISC: 2.00
+        Hydroelectric Pumped Storage: 15.5
+        Batteries:
+                NYCW: 2.00
+                SRCA: 2.00
+                ISNE: 2.00
+                PJMW: 2.00
+                CANO: 4.00
+                NYUP: 2.00
+                MISE: 2.00
+                SRCE: 2.00
+                TRE: 2.00
+                MISW: 2.00
+                SPP: 2.00
+                PJMC: 2.00
+                PJME: 2.00
+                RMRG: 2.00
+                MISS: 2.00
+                CASO: 4.00
+                BASN: 2.00
+                PJMD: 2.00
+                NWPP: 2.00
+                SRSG: 2.00
+                SOU: 2.00
+                MISC: 2.00
 
 # Generator cost data from NREL ATB
 
@@ -1154,7 +1154,7 @@ renewables_clusters:
 # TODO: Manual
 cost_multiplier_region_map:
   TRE: [ERC_REST, TRE, ERC_PHDL, ERC_WEST, TREW]
-  SOU: [FRCC, S_SOU, SRSE]]
+  SOU: [FRCC, S_SOU, SRSE]
   MISW: [MIS_WUMS, MIS_MNWI, MIS_IA, MISW]
   MISE: [MIS_LMI, MISE]
   PJMC: [PJM_COMD, PJMC]
@@ -1806,204 +1806,204 @@ model_tag_values:
 # but they might unintentially map to other techs
 
 regional_tag_values:
-	NYCW:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: NYCW_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: NYCW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: NYCW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: NYCW_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: NYCW_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: NYCW_naturalgas_ctavgcf_moderate_0
-	SRCA:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SRCA_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCA_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRCA_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SRCA_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRCA_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SRCA_naturalgas_ctavgcf_moderate_0
-	ISNE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: ISNE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: ISNE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: ISNE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: ISNE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: ISNE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: ISNE_naturalgas_ctavgcf_moderate_0
-	PJMW:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: PJMW_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: PJMW_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMW_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: PJMW_naturalgas_ctavgcf_moderate_0
-	CANO:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: CANO_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: CANO_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: CANO_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: CANO_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: CANO_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: CANO_naturalgas_ctavgcf_moderate_0
-	NYUP:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: NYUP_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: NYUP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: NYUP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: NYUP_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: NYUP_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: NYUP_naturalgas_ctavgcf_moderate_0
-	MISE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: MISE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: MISE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: MISE_naturalgas_ctavgcf_moderate_0
-	SRCE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SRCE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRCE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SRCE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRCE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SRCE_naturalgas_ctavgcf_moderate_0
-	TRE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: TRE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: TRE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: TRE_naturalgas_ctavgcf_moderate_0
-	MISW:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: MISW_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: MISW_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISW_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: MISW_naturalgas_ctavgcf_moderate_0
-	SPP:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SPP_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SPP_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SPP_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SPP_naturalgas_ctavgcf_moderate_0
-	PJMC:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: PJMC_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: PJMC_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMC_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: PJMC_naturalgas_ctavgcf_moderate_0
-	PJME:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: PJME_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJME_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJME_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: PJME_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJME_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: PJME_naturalgas_ctavgcf_moderate_0
-	RMRG:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: RMRG_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: RMRG_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: RMRG_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: RMRG_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: RMRG_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: RMRG_naturalgas_ctavgcf_moderate_0
-	MISS:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: MISS_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISS_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISS_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: MISS_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISS_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: MISS_naturalgas_ctavgcf_moderate_0
-	CASO:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: CASO_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: CASO_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: CASO_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: CASO_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: CASO_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: CASO_naturalgas_ctavgcf_moderate_0
-	BASN:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: BASN_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: BASN_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: BASN_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: BASN_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: BASN_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: BASN_naturalgas_ctavgcf_moderate_0
-	PJMD:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: PJMD_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMD_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMD_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: PJMD_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJMD_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: PJMD_naturalgas_ctavgcf_moderate_0
-	NWPP:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: NWPP_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: NWPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: NWPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: NWPP_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: NWPP_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: NWPP_naturalgas_ctavgcf_moderate_0
-	SRSG:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SRSG_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRSG_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRSG_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SRSG_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SRSG_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SRSG_naturalgas_ctavgcf_moderate_0
-	SOU:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SOU_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SOU_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SOU_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SOU_naturalgas_ctavgcf_moderate_0
-	MISC:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: MISC_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: MISC_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: MISC_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: MISC_naturalgas_ctavgcf_moderate_0
+        NYCW:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: NYCW_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: NYCW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NYCW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: NYCW_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NYCW_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: NYCW_naturalgas_ctavgcf_moderate_0
+        SRCA:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SRCA_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCA_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRCA_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SRCA_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRCA_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SRCA_naturalgas_ctavgcf_moderate_0
+        ISNE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: ISNE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: ISNE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: ISNE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: ISNE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: ISNE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: ISNE_naturalgas_ctavgcf_moderate_0
+        PJMW:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: PJMW_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: PJMW_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMW_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: PJMW_naturalgas_ctavgcf_moderate_0
+        CANO:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: CANO_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: CANO_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: CANO_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: CANO_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: CANO_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: CANO_naturalgas_ctavgcf_moderate_0
+        NYUP:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: NYUP_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: NYUP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NYUP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: NYUP_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NYUP_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: NYUP_naturalgas_ctavgcf_moderate_0
+        MISE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: MISE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: MISE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: MISE_naturalgas_ctavgcf_moderate_0
+        SRCE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SRCE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRCE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRCE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SRCE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRCE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SRCE_naturalgas_ctavgcf_moderate_0
+        TRE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: TRE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: TRE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: TRE_naturalgas_ctavgcf_moderate_0
+        MISW:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: MISW_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: MISW_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISW_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: MISW_naturalgas_ctavgcf_moderate_0
+        SPP:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SPP_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SPP_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SPP_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SPP_naturalgas_ctavgcf_moderate_0
+        PJMC:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: PJMC_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: PJMC_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMC_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: PJMC_naturalgas_ctavgcf_moderate_0
+        PJME:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: PJME_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJME_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJME_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: PJME_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJME_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: PJME_naturalgas_ctavgcf_moderate_0
+        RMRG:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: RMRG_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: RMRG_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: RMRG_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: RMRG_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: RMRG_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: RMRG_naturalgas_ctavgcf_moderate_0
+        MISS:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: MISS_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISS_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISS_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: MISS_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISS_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: MISS_naturalgas_ctavgcf_moderate_0
+        CASO:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: CASO_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: CASO_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: CASO_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: CASO_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: CASO_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: CASO_naturalgas_ctavgcf_moderate_0
+        BASN:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: BASN_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: BASN_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: BASN_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: BASN_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: BASN_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: BASN_naturalgas_ctavgcf_moderate_0
+        PJMD:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: PJMD_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJMD_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMD_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: PJMD_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJMD_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: PJMD_naturalgas_ctavgcf_moderate_0
+        NWPP:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: NWPP_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: NWPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NWPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: NWPP_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NWPP_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: NWPP_naturalgas_ctavgcf_moderate_0
+        SRSG:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SRSG_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SRSG_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRSG_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SRSG_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SRSG_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SRSG_naturalgas_ctavgcf_moderate_0
+        SOU:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SOU_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SOU_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SOU_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SOU_naturalgas_ctavgcf_moderate_0
+        MISC:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: MISC_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: MISC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: MISC_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: MISC_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: MISC_naturalgas_ctavgcf_moderate_0
  
 
 MinCapReq: ~
