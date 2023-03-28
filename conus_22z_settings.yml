@@ -1162,7 +1162,7 @@ cost_multiplier_region_map:
   SPPC: [SPP_N]
   SPPS: [SPP_WEST, SPP_SPS]
   MISS: [MIS_AMSO, MIS_WOTA, MIS_LA, MIS_AR, MIS_D_MS, MISS]
-  SRSE: [S_SOU, SRSE, FRCC]
+  SRSE: [S_SOU, SRSE, SOU]
   SRCA: [S_VACA, SRCA]
   PJMD: [PJM_Dom, PJMD]
   PJMW: [PJM_West, PJM_AP, PJM_ATSI, PJMW]
