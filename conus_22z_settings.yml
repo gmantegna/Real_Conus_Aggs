@@ -1,4 +1,4 @@
-RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups_22z"
+RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_22z" 
 
 ## extra_inputs.yml
 

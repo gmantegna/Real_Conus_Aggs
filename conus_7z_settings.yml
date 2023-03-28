@@ -1,4 +1,4 @@
-RESOURCE_GROUPS: "/home/gm1710/Real_Conus_Aggs/resource_groups_22z"
+RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_7z" 
 
 ## extra_inputs.yml
 
@@ -46,22 +46,22 @@ demand_weight_factor: 1 # Demand profiles are scaled from 0-1, then scaled up us
 
 # The list of all model regions
 model_regions:
-	- NE
-	- WECC
-	- EICW
-	- SPP
-	- TRE
-	- SOU
-	- PJM
+        - NE
+        - WECC
+        - EICW
+        - SPP
+        - TRE
+        - SOU
+        - PJM
 
 region_aggregations:
-	NE: [NENG_CT, NENG_ME, NENGREST, NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I, NY_Z_J, NY_Z_K]
-	WECC: [WEC_BANC, WEC_CALN, WEC_LADW, WEC_SDGE, WECC_SCE, WECC_AZ, WECC_IID, WECC_NM, WECC_CO, WECC_WY, WECC_ID, WECC_NNV, WECC_SNV, WECC_UT, WECC_MT, WECC_PNW]
-	EICW: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA, MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS, MIS_IL, MIS_INKY, MIS_MO, S_D_AECI, MIS_LMI, S_C_KY, S_C_TVA]
-	SPP: [SPP_N, SPP_NEBR, SPP_WAUE, SPP_SPS, SPP_WEST]
-	TRE: [ERC_PHDL, ERC_WEST, ERC_REST]
-	SOU: [FRCC, S_SOU, S_VACA]
-	PJM: [PJM_AP, PJM_ATSI, PJM_West, PJM_COMD, PJM_Dom, PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
+        NE: [NENG_CT, NENG_ME, NENGREST, NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I, NY_Z_J, NY_Z_K]
+        WECC: [WEC_BANC, WEC_CALN, WEC_LADW, WEC_SDGE, WECC_SCE, WECC_AZ, WECC_IID, WECC_NM, WECC_CO, WECC_WY, WECC_ID, WECC_NNV, WECC_SNV, WECC_UT, WECC_MT, WECC_PNW]
+        EICW: [MIS_AMSO, MIS_AR, MIS_D_MS, MIS_LA, MIS_WOTA, MIS_IA, MIS_MAPP, MIS_MIDA, MIS_MNWI, MIS_WUMS, MIS_IL, MIS_INKY, MIS_MO, S_D_AECI, MIS_LMI, S_C_KY, S_C_TVA]
+        SPP: [SPP_N, SPP_NEBR, SPP_WAUE, SPP_SPS, SPP_WEST]
+        TRE: [ERC_PHDL, ERC_WEST, ERC_REST]
+        SOU: [FRCC, S_SOU, S_VACA]
+        PJM: [PJM_AP, PJM_ATSI, PJM_West, PJM_COMD, PJM_Dom, PJM_EMAC, PJM_PENE, PJM_SMAC, PJM_WMAC]
 
 
 # Dollar year that all outputs will be converted to
@@ -85,14 +85,14 @@ utc_offset: -5
 ## Page 40, use 2022 number
 ## https://www.nerc.com/pa/RAPA/ra/Reliability%20Assessments%20DL/NERC_SRA_2022.pdf
 regional_capacity_reserves:
-	CapRes_1:
-		NE: 0.1464
-		WECC: 0.1538
-		EICW: 0.1724
-		SPP: 0.1600
-		TRE: 0.1375
-		SOU: 0.1500
-		PJM: 0.1490
+        CapRes_1:
+                NE: 0.1464
+                WECC: 0.1538
+                EICW: 0.1724
+                SPP: 0.1600
+                TRE: 0.1375
+                SOU: 0.1500
+                PJM: 0.1490
 cap_res_network_derate_default: 0.95
 
 
@@ -226,13 +226,13 @@ generator_columns: [
 # - "capacity": Use the capacity (MW) to scale up generation
 # - "fraction_load": Distributed generation is a specific fraction of total load
 distributed_gen_method:
-	NE: capacity
-	WECC: capacity
-	EICW: capacity
-	SPP: capacity
-	TRE: capacity
-	SOU: capacity
-	PJM: capacity
+        NE: capacity
+        WECC: capacity
+        EICW: capacity
+        SPP: capacity
+        TRE: capacity
+        SOU: capacity
+        PJM: capacity
 
 # Values - either MW or fraction of load - matching the methods listed for each region
 # in "distributed_gen_method". These can be varied by scenario by adding them to an
@@ -855,13 +855,13 @@ derate_techs:
 small_hydro: True
 small_hydro_mw: 30
 small_hydro_regions:
-	- NE
-	- WECC
-	- EICW
-	- SPP
-	- TRE
-	- SOU
-	- PJM
+        - NE
+        - WECC
+        - EICW
+        - SPP
+        - TRE
+        - SOU
+        - PJM
 
 
 # Factors for calculating hydro energy to power ratio in GenX. The default factors is
@@ -882,15 +882,15 @@ regional_hydro_factor:
 # name is contained in the dataframe technology name.
 
 energy_storage_duration:
-	Hydroelectric Pumped Storage: 15.5
-	Batteries:
-		NE: 2.00
-		WECC: 2.66
-		EICW: 2.00
-		SPP: 2.00
-		TRE: 2.00
-		SOU: 2.00
-		PJM: 2.00
+        Hydroelectric Pumped Storage: 15.5
+        Batteries:
+                NE: 2.00
+                WECC: 2.66
+                EICW: 2.00
+                SPP: 2.00
+                TRE: 2.00
+                SOU: 2.00
+                PJM: 2.00
 
 # Generator cost data from NREL ATB
 
@@ -1702,69 +1702,69 @@ model_tag_values:
 # but they might unintentially map to other techs
 
 regional_tag_values:
-	NE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: NE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: NE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: NE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: NE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: NE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: NE_naturalgas_ctavgcf_moderate_0
-	WECC:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: WECC_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: WECC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: WECC_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: WECC_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: WECC_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: WECC_naturalgas_ctavgcf_moderate_0
-	EICW:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: EICW_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: EICW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: EICW_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: EICW_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: EICW_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: EICW_naturalgas_ctavgcf_moderate_0
-	SPP:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SPP_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SPP_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SPP_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SPP_naturalgas_ctavgcf_moderate_0
-	TRE:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: TRE_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: TRE_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: TRE_naturalgas_ctavgcf_moderate_0
-	SOU:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: SOU_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: SOU_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: SOU_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: SOU_naturalgas_ctavgcf_moderate_0
-	PJM:
-		Retro1_Source:
-			NaturalGas_CCCCSAvgCF_RepowerCoal: PJM_conventional_steam_coal_1
-			NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJM_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJM_natural_gas_fired_combined_cycle_1
-			Hydrogen_CCAvgCF_RetrofitNGCT: PJM_natural_gas_fired_combustion_turbine_1
-		Retro2_Source:
-			Hydrogen_CCAvgCF_RetrofitNGCC: PJM_naturalgas_ccavgcf_moderate_0
-			Hydrogen_CTAvgCF_RetrofitNGCT: PJM_naturalgas_ctavgcf_moderate_0
+        NE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: NE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: NE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: NE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: NE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: NE_naturalgas_ctavgcf_moderate_0
+        WECC:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: WECC_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: WECC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: WECC_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: WECC_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: WECC_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: WECC_naturalgas_ctavgcf_moderate_0
+        EICW:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: EICW_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: EICW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: EICW_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: EICW_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: EICW_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: EICW_naturalgas_ctavgcf_moderate_0
+        SPP:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SPP_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SPP_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SPP_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SPP_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SPP_naturalgas_ctavgcf_moderate_0
+        TRE:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: TRE_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: TRE_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: TRE_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: TRE_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: TRE_naturalgas_ctavgcf_moderate_0
+        SOU:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: SOU_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SOU_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: SOU_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: SOU_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: SOU_naturalgas_ctavgcf_moderate_0
+        PJM:
+                Retro1_Source:
+                        NaturalGas_CCCCSAvgCF_RepowerCoal: PJM_conventional_steam_coal_1
+                        NaturalGas_CCCCSAvgCF_RetrofitNGCC: PJM_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJM_natural_gas_fired_combined_cycle_1
+                        Hydrogen_CCAvgCF_RetrofitNGCT: PJM_natural_gas_fired_combustion_turbine_1
+                Retro2_Source:
+                        Hydrogen_CCAvgCF_RetrofitNGCC: PJM_naturalgas_ccavgcf_moderate_0
+                        Hydrogen_CTAvgCF_RetrofitNGCT: PJM_naturalgas_ctavgcf_moderate_0
  
 
 MinCapReq: ~
