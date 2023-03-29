@@ -14,10 +14,10 @@ case_id_description_fn: conus_case_id_description.csv
 scenario_definitions_fn: conus_scenario_inputs.csv 
 
 # Hourly profiles of distributed gen by region
-distributed_gen_profiles_fn: Google_DG_Capacity_Factor_12.csv 
+distributed_gen_profiles_fn: Google_DG_Capacity_Factor_7.csv 
 
 # Emission policies for each model_year/region/case_id
-emission_policies_fn: conus_rps_ces_emission_limits_12.csv
+emission_policies_fn: conus_rps_ces_emission_limits_7.csv
 
 # Max capacity and spur line distance for each renewable resource
 capacity_limit_spur_fn: conus_resource_capacity_spur.csv 
@@ -25,7 +25,7 @@ capacity_limit_spur_fn: conus_resource_capacity_spur.csv
 demand_segments_fn: conus_demand_segments_voll.csv
 misc_gen_inputs_fn: conus_misc_gen_inputs.csv
 genx_settings_folder: genx_settings
-user_transmission_costs: network_costs_conus_12_zone.csv
+user_transmission_costs: network_costs_conus_7_zone.csv
 user_transmission_constraints_fn: ipm_tx_corrections.csv
 
 ## time_clustering.yml
