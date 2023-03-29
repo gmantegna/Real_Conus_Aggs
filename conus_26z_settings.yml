@@ -1,4 +1,5 @@
-RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_26z"
+# RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_26z"
+RESOURCE_GROUPS: "/Users/gabemantegna/Documents/GitHub/Real_Conus_Aggs/resource_groups_26z"
 
 ## extra_inputs.yml
 
@@ -1141,39 +1142,89 @@ additional_new_gen: ~
 # dataframe.
 new_gen_not_available: ~
 
+clustering_n_jobs: 8
+
 renewables_clusters:
-  - region: all
+  - region: all # (or "all")
     technology: landbasedwind
-    max_clusters: 10
-    max_lcoe: 100
-  - region: all
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 100
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
+  - region: all # (or "all")
     technology: utilitypv
-    max_clusters: 10
-    max_lcoe: 100
-  - region: all
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 100
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
+  - region: all # (or "all")
     technology: offshorewind
     turbine_type: fixed
     pref_site: 1
-    max_lcoe: 150
-    max_clusters: 5
-  - region: all
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 150
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
+  - region: all # (or "all")
     technology: offshorewind
     turbine_type: fixed
     pref_site: 0
-    max_lcoe: 150
-    max_clusters: 5
-  - region: all
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 150
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
+  - region: all # (or "all")
     technology: offshorewind
     turbine_type: floating
     pref_site: 1
-    max_lcoe: 150
-    max_clusters: 5
-  - region: all
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 150
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
+  - region: all # (or "all")
     technology: offshorewind
     turbine_type: floating
     pref_site: 0
-    max_lcoe: 150
-    max_clusters: 5
+    filter: # filter max/min on numeric feature
+      - feature: lcoe
+        max: 150
+    bin: # bin on numeric feature using values or quantile.
+      - feature: lcoe
+        q: 5
+    cluster:
+      - feature: cf
+        method: agglomerative
+        n_clusters: 2
 
 
 # Map user-regions to AEO Electricity Market Module (EMM) regions for cost multipliers

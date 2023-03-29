@@ -1,3 +1,7 @@
+CONUS_extra_inputs/cluster_assignments/*
+results_*/*
 resource_groups*/*
-results*/*
 *.out
+.gitignore~
+..gitignore.un~
+*DS_Store*
