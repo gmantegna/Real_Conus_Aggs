@@ -1,5 +1,4 @@
-# RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_26z"
-RESOURCE_GROUPS: "/Users/gabemantegna/Documents/GitHub/Real_Conus_Aggs/resource_groups_26z"
+RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_26z"
 
 ## extra_inputs.yml
 
@@ -84,7 +83,6 @@ region_aggregations:
         CANO: [WEC_BANC, WEC_CALN]
         TREW: [ERC_PHDL, ERC_WEST]
         SPPC: [SPP_N]
-        FRCC: [FRCC]
         TRE: [ERC_REST]
         SRCA: [S_VACA]
         NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I]
