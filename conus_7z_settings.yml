@@ -32,7 +32,6 @@ user_transmission_constraints_fn: ipm_tx_corrections.csv
 
 # Time clustering/reduction parameters
 reduce_time_domain: false # If the generator and load profiles should be clustered
-time_domain_periods: 18 # The number of periods/clusters
 time_domain_days_per_period: 7 # The number of 24 hour days in each period/cluster
 include_peak_day: true # If the system-wide peak load days should always be included
 demand_weight_factor: 1 # Demand profiles are scaled from 0-1, then scaled up using this value.
@@ -338,6 +337,19 @@ flexible_demand_resources:
 # case.
 settings_management:
   2045:
+    num_time_domain_periods:
+      2_week:
+        time_domain_periods: 2
+      12_week:
+        time_domain_periods: 12
+      22_week:
+        time_domain_periods: 22
+      32_week:
+        time_domain_periods: 32
+      42_week:
+        time_domain_periods: 42
+      52_week:
+        time_domain_periods: 52
     min_cap:
       base:
         MinCapReq:
