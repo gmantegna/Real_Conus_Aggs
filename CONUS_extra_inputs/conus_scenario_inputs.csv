@@ -5,3 +5,4 @@ t22,2045,renewable_mid,reference,IRA_MID,yes,no,yes_yeshydrogen_noira,base,22_we
 t32,2045,renewable_mid,reference,IRA_MID,yes,no,yes_yeshydrogen_noira,base,32_week
 t42,2045,renewable_mid,reference,IRA_MID,yes,no,yes_yeshydrogen_noira,base,42_week
 t52,2045,renewable_mid,reference,IRA_MID,yes,no,yes_yeshydrogen_noira,base,52_week
+t52nr,2045,renewable_mid,reference,IRA_MID,yes,no,yes_yeshydrogen_noira,base,52_week_nored

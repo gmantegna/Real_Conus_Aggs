@@ -350,6 +350,8 @@ settings_management:
         time_domain_periods: 42
       52_week:
         time_domain_periods: 52
+      52_week_nored:
+        time_domain_periods: 52
         reduce_time_domain: false
     min_cap:
       base:

@@ -362,20 +362,6 @@ electrification_scenario: IRA_MID
 # parameters that will be applied to each resource.
 flexible_demand_resources:
   2045:
-    num_time_domain_periods:
-      2_week:
-        time_domain_periods: 2
-      12_week:
-        time_domain_periods: 12
-      22_week:
-        time_domain_periods: 22
-      32_week:
-        time_domain_periods: 32
-      42_week:
-        time_domain_periods: 42
-      52_week:
-        time_domain_periods: 52
-        reduce_time_domain: false
     trans_light_duty:
       fraction_shiftable: 0.84 # 90% in 2050, 50% in 2015, 1.14% per year
       parameter_values:
@@ -427,6 +413,22 @@ flexible_demand_resources:
 # case.
 settings_management:
   2045:
+    num_time_domain_periods:
+      2_week:
+        time_domain_periods: 2
+      12_week:
+        time_domain_periods: 12
+      22_week:
+        time_domain_periods: 22
+      32_week:
+        time_domain_periods: 32
+      42_week:
+        time_domain_periods: 42
+      52_week:
+        time_domain_periods: 52
+      52_week_nored:
+        time_domain_periods: 52
+        reduce_time_domain: false
     min_cap:
       base:
         MinCapReq:
