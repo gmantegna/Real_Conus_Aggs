@@ -64,7 +64,7 @@ region_aggregations:
 
 
 # Dollar year that all outputs will be converted to
-target_usd_year: 2023
+target_usd_year: 2020
 
 # Model year(s) and first planning year(s)
 # Each of these parameters should be a list.
