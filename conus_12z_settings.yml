@@ -208,6 +208,7 @@ generator_columns: [
             "Down_Time",
             "spur_miles",
             "spur_capex",
+            "spur_inv_mwyr",
             "offshore_spur_miles",
             "offshore_spur_capex",
             "tx_miles",
