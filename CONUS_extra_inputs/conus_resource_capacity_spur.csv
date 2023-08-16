@@ -1,6 +1,6 @@
 ﻿region,technology,cluster,spur_miles,max_capacity
 all,advnuclear_atb,,50,-1
-all,battery,,0,-1
+all,battery,,10,-1
 all,hydrogen_ccavgcf_moderate,,10,-1
 all,hydrogen_ccavgcf_retrofitngcc,,0,-1
 all,hydrogen_ctavgcf_moderate,,10,-1
@@ -10,6 +10,6 @@ all,naturalgas_ccccsavgcf_conservative,,20,-1
 all,naturalgas_ccccsavgcf_repowercoal,,0,-1
 all,naturalgas_ccccsavgcf_retrofitngcc,,0,-1
 all,naturalgas_ctavgcf,,10,-1
-all,storage_hydrogen,,0,-1
-all,storage_metalair,,0,-1
+all,storage_hydrogen,,10,-1
+all,storage_metalair,,10,-1
 all,candgeothermal_hydroflash,,20,545
