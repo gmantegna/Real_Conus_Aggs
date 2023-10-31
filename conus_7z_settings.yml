@@ -14,7 +14,8 @@ case_id_description_fn: conus_case_id_description.csv
 scenario_definitions_fn: conus_scenario_inputs.csv 
 
 # Hourly profiles of distributed gen by region
-distributed_gen_profiles_fn: Google_DG_Capacity_Factor_7.csv 
+distributed_gen_fn: nrel_cambium_distr_pv_2022_utc.parquet
+distributed_gen_scenario: MidCase
 
 # Emission policies for each model_year/region/case_id
 emission_policies_fn: conus_rps_ces_emission_limits_7.csv
