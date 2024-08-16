@@ -1,4 +1,4 @@
-RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS/resource_groups_12z" 
+RESOURCE_GROUPS: "/scratch/gpfs/gm1710/resource_groups_data/CONUS_windfix/conus_12"
 
 ## extra_inputs.yml
 

@@ -1,0 +1,51 @@
+﻿region_from,region_to,firm_ttc_mw,notes
+p5,p10,2780,Pacific DC Intertie
+p10,p25,1920,Intermountain Power Project (DC)
+p20,p35,200,Miles City Intertie (West-East)
+p24,p39,310,Virginia Smith Intertie and Segall Intertie (West-East)
+p31,p47,200,Artesia Intertie (West-ERCOT)
+p31,p48,200,Blackwater Intertie (West-East)
+p32,p38,200,Rapid City Intertie (West-East)
+p34,p52,210,Lamar Intertie (West-East)
+p50,p60,220,Oklaunion Intertie (ERCOT-East)
+p57,p63,600,Welsh Intertie (ERCOT-East)
+p61,p62,1021,future baseline certain lines
+p12,p13,1262,future baseline certain lines
+p12,p15,765,future baseline certain lines
+p60,p63,606,future baseline certain lines
+p99,p100,2706,future baseline certain lines
+p100,p116,2308,future baseline certain lines
+p115,p116,2077,future baseline certain lines
+p2,p5,1275,future baseline certain lines
+p40,p53,514,future baseline certain lines
+p60,p61,493,future baseline certain lines
+p61,p63,387,future baseline certain lines
+p50,p51,866,future baseline certain lines
+p60,p63,1819,future baseline certain lines
+p61,p64,418,future baseline certain lines
+p79,p80,772,future baseline certain lines
+p131,p132,1098,future baseline certain lines
+p43,p46,839,future baseline certain lines
+p48,p50,908,future baseline certain lines
+p49,p50,460,future baseline certain lines
+p37,p43,1902,future baseline certain lines plus CU HVDC and Square Butte (DC)
+p38,p44,490,future baseline certain lines
+p43,p44,615,future baseline certain lines
+p45,p69,648,future baseline certain lines
+p111,p115,836,future baseline certain lines
+p122,p126,2140,future baseline certain lines
+p131,p133,1479,future baseline certain lines
+p132,p133,1104,future baseline certain lines
+p45,p68,704,future baseline certain lines
+p41,p54,665,future baseline certain lines
+p46,p78,549,future baseline certain lines
+p70,p71,797,future baseline certain lines
+p71,p81,736,future baseline certain lines
+p81,p82,1074,future baseline certain lines
+p82,p83,1055,future baseline certain lines
+p105,p107,4385,future baseline certain lines
+p36,p38,464,future baseline certain lines
+p5,p7,1974,future baseline certain lines
+p7,p15,1215,future baseline certain lines
+p42,p43,654,future baseline certain lines
+p83,p105,710,future baseline certain lines
