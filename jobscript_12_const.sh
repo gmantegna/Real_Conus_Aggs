@@ -13,4 +13,4 @@ module purge
 module load anaconda3/2022.5
 
 conda activate powergenome
-python /home/gm1710/PowerGenome/powergenome/run_powergenome_multiple_outputs_cli.py -sf /home/gm1710/Real_Conus_Aggs/conus_12z_settings.yml -rf /home/gm1710/Real_Conus_Aggs/results_12z
+python /home/gm1710/PowerGenome/powergenome/run_powergenome_multiple_outputs_cli.py -sf /home/gm1710/Real_Conus_Aggs/conus_12z_const_settings.yml -rf /home/gm1710/Real_Conus_Aggs/results_12z_const
