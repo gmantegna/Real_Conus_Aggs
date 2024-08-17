@@ -76,81 +76,31 @@ model_regions:
 
 # The list of all aggregations
 region_aggregations:
-  'ISNE': ['p134', 'p133', 'p132', 'p131', 'p130', 'p129']
-  'NY': ['p128', 'p127']
-  'PJME': ['p126', 'p125', 'p124', 'p123', 'p122']
-  'PJMW': ['p121',
-    'p120',
-    'p119',
-    'p118',
-    'p117',
-    'p116',
-    'p115',
-    'p114',
-    'p113',
-    'p112',
-    'p111',
-    'p104',
-    'p100']
-  'SRCE': ['p110', 'p109', 'p93', 'p92', 'p88']
-  'MISC': ['p108',
-    'p107',
-    'p106',
-    'p105',
-    'p84',
-    'p83',
-    'p82',
-    'p81',
-    'p73',
-    'p72',
-    'p71']
-  'MISE': ['p103']
+  'BASN': ['p26', 'p25', 'p16', 'p15', 'p13', 'p12']
+  'CANO': ['p9']
+  'CASO': ['p11', 'p10']
   'FRCC': ['p102', 'p101']
-  'PJMD': ['p99']
-  'SRCA': ['p98', 'p97', 'p96', 'p95']
-  'SRSE': ['p94', 'p91', 'p90', 'p89']
+  'ISNE': ['p134', 'p133', 'p132', 'p131', 'p130', 'p129']
+  'MISC': ['p108', 'p107', 'p106', 'p105', 'p84', 'p83', 'p82', 'p81', 'p73', 'p72', 'p71']
+  'MISE': ['p103']
   'MISS': ['p87', 'p86', 'p85', 'p66', 'p58']
+  'MISW': ['p79', 'p78', 'p77', 'p76', 'p75', 'p74', 'p70', 'p69', 'p68', 'p46', 'p45', 'p44', 'p43', 'p42', 'p37', 'p36', 'p35']
+  'NWPP': ['p20', 'p19', 'p18', 'p17', 'p14', 'p8', 'p7', 'p6', 'p5', 'p4', 'p3', 'p2', 'p1']
+  'NY': ['p128', 'p127']
   'PJMC': ['p80']
-  'MISW': ['p79',
-    'p78',
-    'p77',
-    'p76',
-    'p75',
-    'p74',
-    'p70',
-    'p69',
-    'p68',
-    'p46',
-    'p45',
-    'p44',
-    'p43',
-    'p42',
-    'p37',
-    'p36',
-    'p35']
+  'PJMD': ['p99']
+  'PJME': ['p126', 'p125', 'p124', 'p123', 'p122']
+  'PJMW': ['p121', 'p120', 'p119', 'p118', 'p117', 'p116', 'p115', 'p114', 'p113', 'p112', 'p111', 'p104', 'p100']
+  'RMRG': ['p34', 'p33', 'p32', 'p24', 'p23', 'p22', 'p21']
+  'SPPC': ['p54', 'p55', 'p53', 'p52']
+  'SPPN': ['p41', 'p40', 'p39', 'p38']
+  'SPPS': ['p57', 'p56', 'p51', 'p50', 'p49', 'p48', 'p47']
+  'SRCA': ['p98', 'p97', 'p96', 'p95']
+  'SRCE': ['p110', 'p109', 'p93', 'p92', 'p88']
+  'SRSE': ['p94', 'p91', 'p90', 'p89']
+  'SRSG': ['p59', 'p31', 'p30', 'p29', 'p28', 'p27']
   'TRE': ['p67', 'p65', 'p64', 'p63']
   'TREW': ['p62', 'p61', 'p60']
-  'SRSG': ['p59', 'p31', 'p30', 'p29', 'p28', 'p27']
-  'SPPS': ['p57', 'p56', 'p51', 'p50', 'p49', 'p48', 'p47']
-  'SPPC': ['p55', 'p53', 'p52', 'p54']
-  'SPPN': ['p41', 'p40', 'p39', 'p38']
-  'RMRG': ['p34', 'p33', 'p32', 'p24', 'p23', 'p22', 'p21']
-  'BASN': ['p26', 'p25', 'p16', 'p15', 'p13', 'p12']
-  'NWPP': ['p20',
-    'p19',
-    'p18',
-    'p17',
-    'p14',
-    'p8',
-    'p7',
-    'p6',
-    'p5',
-    'p4',
-    'p3',
-    'p2',
-    'p1']
-  'CASO': ['p11', 'p10']
-  'CANO': ['p9']
 
 
 # Dollar year that all outputs will be converted to
@@ -518,7 +468,7 @@ settings_management:
             MISW: 6652
             NWPP: 3372
             NYCW: 4522
-            NY: 3274
+            NY: 7796
             PJMC: 3657
             PJMD: 4998
             PJME: 15620
@@ -1047,29 +997,30 @@ renewables_clusters:
 cost_multiplier_region_map:
   TRE: [ERC_REST, TRE, ERC_PHDL, ERC_WEST, TREW]
   FRCC: [FRCC]
-  MISW: [MIS_WUMS, MIS_MNWI, MIS_IA, MISW]
+  MISW: [MIS_WUMS, MIS_MNWI, MIS_IA, MISW, EICW]
+  MISC: [MIS_IL, MIS_MO, S_D_AECI, MIS_INKY, MISC, EASC]
   MISE: [MIS_LMI, MISE]
-  PJMC: [PJM_COMD, PJMC]
-  MISC: [MIS_IL, MIS_MO, S_D_AECI, MIS_INKY, MISC]
-  SPPN: [MIS_MAPP, SPP_WAUE, SPP_NEBR, MIS_MIDA, SPPN]
-  SPPC: [SPP_N, SPPC]
-  SPPS: [SPP_WEST, SPP_SPS, SPPS]
   MISS: [MIS_AMSO, MIS_WOTA, MIS_LA, MIS_AR, MIS_D_MS, MISS]
-  SRSE: [S_SOU, SRSE]
-  SRCA: [S_VACA, SRCA]
-  PJMD: [PJM_Dom, PJMD]
+  ISNE: [NENG_ME, NENGREST, NENG_CT, EIC, NE, ISNE]
+  NYCW: [NY_Z_J, NY_Z_K, NYCW, NY]
+  NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I, NYUP]
+  PJME: [PJM_WMAC, PJM_EMAC, PJM_SMAC, PJM_PENE, PJME, PJM]
   PJMW: [PJM_West, PJM_AP, PJM_ATSI, PJMW]
-  PJME: [PJM_WMAC, PJM_EMAC, PJM_SMAC, PJM_PENE, PJME]
+  PJMC: [PJM_COMD, PJMC]
+  PJMD: [PJM_Dom, PJMD]
+  SRCA: [S_VACA, SRCA]
+  SRSE: [S_SOU, SRSE, SOU]
   SRCE: [S_C_TVA, S_C_KY, SRCE]
-  NYUP: [NY_Z_A, NY_Z_B, NY_Z_C&E, NY_Z_D, NY_Z_F, NY_Z_G-I, NY]
-  NYCW: [NY_Z_J, NY_Z_K, NYCW]
-  ISNE: [NENG_ME, NENGREST, NENG_CT, ISNE]
-  RMRG: [WECC_CO, RMRG]
-  BASN: [WECC_ID, WECC_WY, WECC_UT, WECC_NNV, BASN]
-  NWPP: [WECC_PNW, WECC_MT, NWPP]
-  CANO: [WEC_CALN, WEC_BANC, CA_N, CANO]
-  CASO: [WECC_IID, WECC_SCE, WEC_LADW, WEC_SDGE, CA_S, CASO]
+  SPPS: [SPP_WEST, SPP_SPS]
+  SPPC: [SPP_N]
+  SPPN: [MIS_MAPP, SPP_WAUE, SPP_NEBR, MIS_MIDA, SPP]
   SRSG: [WECC_AZ, WECC_NM, WECC_SNV, SRSG]
+  CANO: [WEC_CALN, WEC_BANC, CA_N, CANO]
+  CASO: [WECC_IID, WECC_SCE, WEC_LADW, WEC_SDGE, CA_S, CASO, WECC, CA]
+  NWPP: [WECC_PNW, WECC_MT, NWPP]
+  RMRG: [WECC_CO, RMRG, WECCE, WECCC]
+  BASN: [WECC_ID, WECC_WY, WECC_UT, WECC_NNV, BASN]
+
 
 # The keys in cost_multiplier_technology_map are technologies listed in EIA's capital
 # cost assumptions document. The 2020 version is available at
