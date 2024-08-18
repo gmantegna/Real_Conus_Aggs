@@ -42,5 +42,6 @@ for year in years:
     just_load_data_new.reset_index(inplace=True)
     load_final=pd.concat([not_load_data,just_load_data_new],axis=1)
     load_final.to_csv(new_inputs_path / "Load_data.csv",index=False)
+    load.to_csv(new_inputs_path / "Load_data_full.csv",index=False)
     print("created load")
 
